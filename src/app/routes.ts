@@ -19,7 +19,7 @@ export const routes: Routes = [
   },
   // Link do RemoteEntry rodando aplicacao local
   // {
-  //   path: 'outroappp',
+  //   path: 'weather',
   //   loadChildren: () =>
   //     loadRemoteModule({
   //       type: 'module',
