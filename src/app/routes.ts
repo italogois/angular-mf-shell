@@ -8,34 +8,26 @@ export const routes: Routes = [
     component: WelcomeComponent,
   },
   // Link do RemoteEntry na aws
-  // {
-  //   path: 'weather',
-  //   loadChildren: () =>
-  //     loadRemoteModule({
-  //       type: 'module',
-  //       remoteEntry: 'https://angular-teste-mf.s3.amazonaws.com/remoteEntry.js',
-  //       exposedModule: './WeatherWidgetModule',
-  //     }).then((m) => m.WeatherWidgetModule),
-  // },
-  // Link do RemoteEntry rodando aplicacao local
   {
-    path: 'weather',
+    path: 'outroappp',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:5100/remoteEntry.js',
+        remoteEntry: 'https://angular-teste-mf.s3.amazonaws.com/remoteEntry.js',
         exposedModule: './WeatherWidgetModule',
       }).then((m) => m.WeatherWidgetModule),
   },
-  {
-    path: 'alerts',
-    loadChildren: () =>
-      loadRemoteModule({
-        type: 'module',
-        remoteEntry: 'http://localhost:5000/remoteEntry.js',
-        exposedModule: './OverviewModule',
-      }).then((m) => m.OverviewModule),
-  },
+  // Link do RemoteEntry rodando aplicacao local
+  // {
+  //   path: 'outroappp',
+  //   loadChildren: () =>
+  //     loadRemoteModule({
+  //       type: 'module',
+  //       remoteEntry: 'http://localhost:5100/remoteEntry.js',
+  //       exposedModule: './WeatherWidgetModule',
+  //     }).then((m) => m.WeatherWidgetModule),
+  // },
+
   {
     path: '**',
     redirectTo: '',
