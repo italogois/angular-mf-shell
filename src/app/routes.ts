@@ -9,7 +9,7 @@ export const routes: Routes = [
   },
   // Link do RemoteEntry na aws
   {
-    path: 'outroappp',
+    path: 'weather',
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
