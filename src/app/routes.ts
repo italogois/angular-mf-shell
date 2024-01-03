@@ -7,6 +7,17 @@ export const routes: Routes = [
     path: '',
     component: WelcomeComponent,
   },
+  // Link do RemoteEntry na aws
+  // {
+  //   path: 'weather',
+  //   loadChildren: () =>
+  //     loadRemoteModule({
+  //       type: 'module',
+  //       remoteEntry: 'https://angular-teste-mf.s3.amazonaws.com/remoteEntry.js',
+  //       exposedModule: './WeatherWidgetModule',
+  //     }).then((m) => m.WeatherWidgetModule),
+  // },
+  // Link do RemoteEntry rodando aplicacao local
   {
     path: 'weather',
     loadChildren: () =>
